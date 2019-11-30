@@ -1,0 +1,22 @@
+--cpu Cortex-M4.fp
+".\objects\system_stm32f4xx.o"
+".\objects\startup_stm32f4xx.o"
+".\objects\app.o"
+".\objects\stm32fxxx_it.o"
+".\objects\usb_bsp.o"
+".\objects\usbd_desc.o"
+".\objects\usbd_usr.o"
+".\objects\usb_core.o"
+".\objects\usb_dcd.o"
+".\objects\usb_dcd_int.o"
+".\objects\usbd_core.o"
+".\objects\usbd_hid_core.o"
+".\objects\usbd_ioreq.o"
+".\objects\usbd_req.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_gpio.o"
+--strict --scatter ".\Objects\429_HID.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\429_HID.map" -o .\Objects\429_HID.axf
